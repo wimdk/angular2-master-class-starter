@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
 import { Contact } from './models/contact';
-import { CONTACT_DATA } from './data/contact-data';
+import { ContactsService } from './contacts.service';
 
 @Component({
   selector: 'trm-contacts-app',
@@ -9,5 +10,4 @@ import { CONTACT_DATA } from './data/contact-data';
 })
 export class ContactsAppComponent {
 	title = 'Angular 2 Master Class setup works!';
-	contacts: Contact[] = CONTACT_DATA;
 }
